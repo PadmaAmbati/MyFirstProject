@@ -1,0 +1,13 @@
+package First.Project;
+
+public class myFirst_Javacode {
+
+	
+	public void launchGoogle(){
+	
+	}
+	public void searchString(){
+		
+	}
+	
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="First.Project.myFirst_Javacode"/>
+<fullyQualifiedTypeName name="First.cucumber.myFirst_Javacode"/>
+<fullyQualifiedTypeName name="cucumber.junit.Cucumber"/>
+<fullyQualifiedTypeName name="cucumber.api.junit.Cucumber"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
+<fullyQualifiedTypeName name="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+<fullyQualifiedTypeName name="cucumber.api.CucumberOptions"/>
+<fullyQualifiedTypeName name="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+<fullyQualifiedTypeName name="io.cucumber.testng.CucumberOptions"/>
+<fullyQualifiedTypeName name="Javapages.addPlace_Javacode"/>
+<fullyQualifiedTypeName name="io.restassured.filter.session.SessionFilter"/>
+<fullyQualifiedTypeName name="io.restassured.RestAssured"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="io.cucumber.java.en.Given"/>
+<fullyQualifiedTypeName name="io.cucumber.java.en.When"/>
+<fullyQualifiedTypeName name="io.cucumber.java.en.Then"/>
+<fullyQualifiedTypeName name="io.cucumber.java.en.And"/>
+<fullyQualifiedTypeName name="resources.TestDataBuilder"/>
+<fullyQualifiedTypeName name="io.restassured.builder.RequestSpecBuilder"/>
+<fullyQualifiedTypeName name="io.restassured.specification.RequestSpecification"/>
+<fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
+<fullyQualifiedTypeName name="io.restassured.builder.ResponseSpecBuilder"/>
+<fullyQualifiedTypeName name="io.restassured.specification.ResponseSpecification"/>
+<fullyQualifiedTypeName name="io.restassured.http.ContentType"/>
+<fullyQualifiedTypeName name="io.restassured.response.Response"/>
+<fullyQualifiedTypeName name="io.restassured.path.json.JsonPath"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="resources.Utils"/>
+<fullyQualifiedTypeName name="io.restassured.filter.log.RequestLoggingFilter"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="io.restassured.filter.log.ResponseLoggingFilter"/>
+<fullyQualifiedTypeName name="com.sun.xml.fastinfoset.sax.Properties"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+</qualifiedTypeNameHistroy>

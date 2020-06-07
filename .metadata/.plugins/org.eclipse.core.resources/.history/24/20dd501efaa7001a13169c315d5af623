@@ -1,0 +1,51 @@
+package stepDefinitions;
+
+import static io.restassured.RestAssured.given;
+
+import java.util.ArrayList;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
+import pojo.AddPlaceDeserialize;
+import pojo.AddPlacePojoClass;
+import pojo.LocationPojo;
+import resources.TestDataBuilder;
+
+public class AddPlaceSteps {
+	
+	TestDataBuilder data=new TestDataBuilder();
+
+	 @Given("^pass the addPlace payload$")
+	    public void pass_the_addplace_payload() throws Throwable {
+		 
+		 RequestSpecification req=new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
+				 .addQueryParam("key","qaclick123").setContentType(ContentType.JSON).build();
+		 
+			AddPlaceDeserialize response=given().queryParam("key","qaclick123").body(data.appplacePayload())
+			.when().post("/maps/api/place/add/json")
+			.then().extract().as(AddPlaceDeserialize.class);
+	        
+	    }
+
+	    @When("^call the AddPlaceAPI by using POST method$")
+	    public void call_the_addplaceapi_by_using_post_method() throws Throwable {
+	        
+	    }
+
+	    @Then("^Verify the status code 200$")
+	    public void verify_the_status_code_200() throws Throwable {
+	        
+	    }
+
+	    @And("^Verify the \"([^\"]*)\" in the response is \"([^\"]*)\"$")
+	    public void verify_the_something_in_the_response_is_something(String strArg1, String strArg2) throws Throwable {
+	        
+	    }
+	
+}

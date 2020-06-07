@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="APIFramework" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="cucumber.Options.TestRunner" time="1.849">
+    <testsuite name="Verify addPlace API functionality" time="1.849">
+      <testcase name="Verify AddPlace functionality" classname="Verify addPlace API functionality" time="1.841">
+        <error>java.lang.NullPointerException&#13;
+	at stepDefinitions.AddPlaceSteps.verify_the_status_code_200(AddPlaceSteps.java:59)&#13;
+	at ✽.Verify the status code 200(file:///C:/Users/91812/workspace/APIFramework/src/test/java/features/addPlace.feature:6)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Verify AddPlace functionality" classname="Verify addPlace API functionality" time="0.008">
+        <error>java.lang.NullPointerException&#13;
+	at stepDefinitions.AddPlaceSteps.verify_the_status_code_200(AddPlaceSteps.java:59)&#13;
+	at ✽.Verify the status code 200(file:///C:/Users/91812/workspace/APIFramework/src/test/java/features/addPlace.feature:6)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

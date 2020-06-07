@@ -1,0 +1,16 @@
+package Javapages;
+
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+public class addPlace_Javacode {
+
+	
+	public void addplace(){
+		RestAssured.baseURI="https://rahulshettyacademy.com";
+		
+		given().queryParam("key","qaclick123").body(body)
+	}
+	public void validateResponse(){
+		
+	}
+}

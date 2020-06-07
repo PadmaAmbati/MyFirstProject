@@ -1,0 +1,12 @@
+package First.Project;
+
+import org.testng.annotations.Test;
+
+public class APICheck {
+	@Test
+	public void checkAPI()
+	{
+		RestAssured.
+	}
+	
+}

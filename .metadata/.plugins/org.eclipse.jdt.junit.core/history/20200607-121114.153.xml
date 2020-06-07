@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="APIFramework" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumber.Options.TestRunner" time="1.822">
+    <testsuite name="Verify addPlace API functionality" time="1.822">
+      <testcase name="Verify DeletePlace functionality" classname="Verify addPlace API functionality" time="1.822">
+        <error>java.lang.IllegalArgumentException: No enum constant resources.APIResources./maps/api/place/add/json&#13;
+	at java.lang.Enum.valueOf(Unknown Source)&#13;
+	at resources.APIResources.valueOf(APIResources.java:1)&#13;
+	at stepDefinitions.AddPlaceSteps.call_the_something_by_using_something_method(AddPlaceSteps.java:48)&#13;
+	at stepDefinitions.Hooks.beforeScenario(Hooks.java:14)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

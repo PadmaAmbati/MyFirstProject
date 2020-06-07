@@ -1,0 +1,12 @@
+package Javapages;
+
+public class addPlace_Javacode {
+
+	
+	public void addplace(){
+		
+	}
+	public void validateResponse(){
+		
+	}
+}

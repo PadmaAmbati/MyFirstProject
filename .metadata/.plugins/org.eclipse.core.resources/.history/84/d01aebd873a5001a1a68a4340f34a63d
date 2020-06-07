@@ -1,0 +1,15 @@
+package Javapages;
+
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+public class addPlace_Javacode {
+
+	
+	public void addplace(){
+		RestAssured.baseURI="";
+		given().
+	}
+	public void validateResponse(){
+		
+	}
+}

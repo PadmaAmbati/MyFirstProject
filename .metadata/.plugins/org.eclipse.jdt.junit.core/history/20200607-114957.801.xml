@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="APIFramework" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="cucumber.Options.TestRunner" time="5.086">
+    <testsuite name="Verify addPlace API functionality" time="5.086">
+      <testcase name="Verify AddPlace functionality" classname="Verify addPlace API functionality" time="4.337"/>
+      <testcase name="Verify DeletePlace functionality" classname="Verify addPlace API functionality" time="0.749">
+        <failure>java.lang.AssertionError: expected:&lt;404&gt; but was:&lt;200&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:835)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:647)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:633)&#13;
+	at stepDefinitions.AddPlaceSteps.verify_the_status_code_200(AddPlaceSteps.java:65)&#13;
+	at ✽.Verify the status code 200(file:///C:/Users/91812/workspace/APIFramework/src/test/java/features/addPlace.feature:19)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

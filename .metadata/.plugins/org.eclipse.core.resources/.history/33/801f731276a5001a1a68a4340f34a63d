@@ -1,0 +1,22 @@
+package Javapages;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+public class addPlace_Javacode extends API_payload{
+		String response;
+	
+	public void addplace(){
+		RestAssured.baseURI="https://rahulshettyacademy.com";
+		
+		 response=given().queryParam("key","qaclick123").body(postpayload())
+		.when().post("/maps/api/place/add/json")
+		.then().assertThat().statusCode(200).extract().asString();
+		
+	}
+	public void validateResponse(){
+		JsonPath js=new JsonPath(response);
+		System.out.println(js.getString("place_id"));
+	}
+}

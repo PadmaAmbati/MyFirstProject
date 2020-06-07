@@ -1,0 +1,62 @@
+package stepDefinitions;
+
+import static io.restassured.RestAssured.given;
+
+import java.util.ArrayList;
+import static org.junit.Assert.*;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+import pojo.AddPlaceDeserialize;
+import pojo.AddPlacePojoClass;
+import pojo.LocationPojo;
+import resources.TestDataBuilder;
+import resources.Utils;
+
+public class AddPlaceSteps extends Utils{
+	
+	TestDataBuilder data=new TestDataBuilder();
+	RequestSpecification req;
+	ResponseSpecification resspec;
+	Response response;
+
+	 @Given("^pass the addPlace payload$")
+	    public void pass_the_addplace_payload() throws Throwable {
+		 
+		  	 
+		 resspec=new ResponseSpecBuilder()
+				.expectContentType(ContentType.JSON).build();
+		 
+		 req=given().spec(sepcBuilders()).body(data.appplacePayload());
+	        
+	    }
+
+	    @When("^call the AddPlaceAPI by using POST method$")
+	    public void call_the_addplaceapi_by_using_post_method() throws Throwable {
+	        response=req.when().post("/maps/api/place/add/json").then().spec(resspec).extract().response();
+	    }
+
+	    @Then("^Verify the status code 200$")
+	    public void verify_the_status_code_200() throws Throwable {
+	    	assertEquals(response.getStatusCode(),200);
+	        
+	    }
+
+	    @And("^Verify the \"([^\"]*)\" in the response is \"([^\"]*)\"$")
+	    public void verify_the_something_in_the_response_is_something(String keyValue, String Expectedvalue) throws Throwable {
+	    	String response_str=response.asString();
+	        JsonPath js=new JsonPath(response_str);
+	        assertEquals(js.get(keyValue).toString(),Expectedvalue);
+
+	    }
+	
+}

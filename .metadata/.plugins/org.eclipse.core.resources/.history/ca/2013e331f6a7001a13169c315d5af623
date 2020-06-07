@@ -1,0 +1,31 @@
+package stepDefinitions;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class AddPlaceSteps {
+
+	 @Given("^pass the addPlace payload$")
+	    public void pass_the_addplace_payload() throws Throwable {
+		 
+	        
+	    }
+
+	    @When("^call the AddPlaceAPI by using POST method$")
+	    public void call_the_addplaceapi_by_using_post_method() throws Throwable {
+	        
+	    }
+
+	    @Then("^Verify the status code 200$")
+	    public void verify_the_status_code_200() throws Throwable {
+	        
+	    }
+
+	    @And("^Verify the \"([^\"]*)\" in the response is \"([^\"]*)\"$")
+	    public void verify_the_something_in_the_response_is_something(String strArg1, String strArg2) throws Throwable {
+	        
+	    }
+	
+}

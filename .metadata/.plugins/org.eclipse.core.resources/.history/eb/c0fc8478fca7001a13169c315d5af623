@@ -1,0 +1,8 @@
+Feature: Verify addPlace API functionality
+
+Scenario: Verify AddPlace functionality
+Given pass the addPlace payload
+When call the AddPlaceAPI by using POST method
+Then Verify the status code 200
+#And Verify the "status" in the response is "ok"
+And Verify the "scope" in tshe response is "APP"

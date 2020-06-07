@@ -1,0 +1,36 @@
+package First.Steps;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class myfirstSteps {
+
+	@Given("^launch google page$")
+    public void launch_google_page() throws Throwable {
+        
+    }
+
+    @When("^enter search string in search box$")
+    public void enter_search_string_in_search_box() throws Throwable {
+        
+    }
+
+    @Then("^verify serahc result present $")
+    public void verify_serahc_result_present() throws Throwable {
+        
+    }
+
+    @And("^click on Seearch button$")
+    public void click_on_seearch_button() throws Throwable {
+        
+    }
+
+    @And("^click on first link from the search result$")
+    public void click_on_first_link_from_the_search_result() throws Throwable {
+        
+    }
+
+	
+}

@@ -1,0 +1,11 @@
+package First.Project;
+
+public class TestNG_Check {
+	
+	
+	@Test
+	public void testmethod()
+	{
+		System.out.println("HELLO ...AM from TestNG method" );
+	}
+}

@@ -1,0 +1,20 @@
+package First.Project;
+
+
+
+import org.junit.runner.RunWith;
+
+import cucumber.junit.Cucumber;
+
+@RunWith(Cucumber.class) 
+@Cucumber.Options(format = {"pretty", "html:target/cucumber"},
+		features = "src\\test\\java\\First\\features\\myfirst.feature",
+		glue="src\\test\\java\\First\\Steps\\myfirstSteps.java"
+		
+		) 
+public class TestRunner {
+	
+
+	
+
+}
